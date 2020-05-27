@@ -1,11 +1,11 @@
 # VEX Autonomous Recording and Playback
- Extracted from VEX Turning Point Code of Team 9932E
- 
  *Using PROS v3.1.5, a microSD card is required*
  
  With the release of the new generation of VEX sensors, I thought it was finally time to publish this code from 2019. Included in it is the often-sought-after ability to record autonomous routines on the fly. Simply enter driver control, use a controller to perform the desired actions, and then press the center button on the V5 screen in order to save the recorded routine to the SD card. The saved autonomous path is present in a file on the SD card and can be backed up for future use or renamed to allow multiple different autonomous routine choices which are selected during the pre-autonomous period. The working principle behind this code is that controller inputs are logged and then saved in a format which can be loaded later and replayed. Thus, the majority of robot control code should be placed within dataHandler.cpp, so that updates to functionality will propogate to both driver and autonomous routines.
 
-Notable features:
+_Extracted from VEX Turning Point Code of Team 9932E_
+
+## Notable features:
 - Gyroscope-based autonomous platform climbing
 - Software-based flywheel double shot (hitting high and low flags in quick succession by taking advantage of the first shot's effect on flywheel speed)
 - Vision sensor alignment task
@@ -17,4 +17,4 @@ Interfaces to generate autonomous paths graphically and edit saved autonomous ro
 
 Hopefully the release of this code will inspire further innovations while also leveling the playing field for teams which cannot afford to purchase the new hardware.
 
-- David, Team 9932E
+\- David, Team 9932E
