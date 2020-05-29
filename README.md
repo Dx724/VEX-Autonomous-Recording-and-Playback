@@ -1,4 +1,4 @@
-# VEX Autonomous Recording and Playback
+# VEX Autonomous Routine Recording + Playback
  *Using PROS v3.1.5, a microSD card is required*
  
  With the release of the new generation of VEX sensors, I thought it was finally time to publish this code from 2019. Included in it is the often-sought-after ability to record autonomous routines on the fly. Simply enter driver control, use a controller to perform the desired actions, and then press the center button on the V5 screen in order to save the recorded routine to the SD card. The saved autonomous path is present in a file on the SD card and can be backed up for future use or renamed to allow multiple different autonomous routine choices which are selected during the pre-autonomous period. The working principle behind this code is that controller inputs are logged and then saved in a format which can be loaded later and replayed. Thus, the majority of robot control code should be placed within dataHandler.cpp, so that updates to functionality will propogate to both driver and autonomous routines.
